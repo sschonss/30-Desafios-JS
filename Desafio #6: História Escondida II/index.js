@@ -6,18 +6,18 @@ Assuma que a string não possui nenhuma letra com acento,
 número ou caractere especial, apenas letras e espaços.
 */
 
-test1 = "This is an apple";
-test2 = "May the force be with you";
+test1 = 'This is an apple'
+test2 = 'May the force be with you'
+test3 = `Luiz Schons`
 
 function translate(str) {
-  
-  let char = str.split("").reverse().join('');
-  
-  let ordChar = char.split(' ').reverse().join(' ') 
+  let char = str.split('').reverse().join('')
+
+  let ordChar = char.split(' ').reverse().join(' ')
 
   return ordChar.toLowerCase()
-  
 }
 
 console.log(translate(test1))
 console.log(translate(test2))
+console.log(translate(test3))
